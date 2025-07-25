@@ -1,0 +1,443 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    object-fit: contain;
+}
+:root{
+    --green-500: hsl(171, 66%, 44%);
+    --blue-100: hsl(233, 100%, 69%);
+    --gray-700: hsl(210, 10%, 33%);
+    --gray-500: hsl(201, 11%, 66%);
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    background-color: white;
+    font-family: "Bai Jamjuree", Helvetica, sans-serif;
+}
+p{
+    font-size: 18px;
+}
+.page-2{
+    margin-top: 10vw;
+}
+
+
+
+/* page-1 */
+.header{
+    position: relative;
+}
+.header1-img{
+    position: relative;
+    min-width: 100%;
+}
+.header2-img{
+    display: none;
+}
+.website-logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    vertical-align:middle;
+    top: clamp(6rem, calc(8vw - 0.1rem), 10rem);
+    width: 10%;
+}
+.main-text{
+    width: 100%;
+    text-align: center;
+}
+.moto{
+    font-size:clamp(2.5rem,calc(5vw - 0.1rem),5rem);
+    color: var(--gray-700);
+}
+.description{
+    font-size: clamp(1rem, 3vw - 0.1rem,2rem);
+    padding: 30px 22vw;
+    color: var(--gray-500)
+}
+.buttons{
+    width: 100%;
+    height: 5vw;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-ios,
+.download-mac{
+    padding: 20px 40px;
+    font-size: 25px;
+    font-family:"Bai Jamjuree" ;
+    font-weight: 500;
+    margin-right: 40PX;
+    border-radius: 55px;
+    border-style: none;
+    color: white;
+}
+.download-ios:hover,
+.download-mac:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.2s;
+}
+.download-ios:active,
+.download-mac:active{
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.1s;
+}
+.download-ios{
+    background-color: var(--green-500);
+    box-shadow: 0px 4px hsl(171, 66%, 38%);
+}
+.download-mac{
+    background-color: var(--blue-100);
+    box-shadow: 0px 4px hsl(233, 100%, 64%);
+}
+
+
+
+/* page-2 */
+.page-2{
+    margin-bottom: 10rem;
+}
+.page-main-text{
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+}
+.page-heading{
+    color: var(--gray-700);
+    font-size: clamp(2.5rem,calc(4vw - 0.1rem),3.5rem)
+}
+.page-description{
+    color: var(--gray-500);
+    padding: 20px 22vw;
+    font-size: clamp(1.2rem, calc(2vw - 0.1rem),1.5rem);
+}
+.image-and-features-container{
+    margin-top: 100px;
+    display: flex;
+}
+.image-container{
+    margin-left: -50px;
+    width: 50vw;
+    margin-right: 150px;
+}
+.computer-img{
+    width: 100%;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-bottom: 100px;
+}
+.feature{
+    margin-top: 30px;
+    width: 20vw;
+}
+.feature h1{
+    color: var(--gray-700);
+    margin-bottom: 10px;
+}
+.feature p{
+    color: var(--gray-500);
+    font-size: clamp(1rem, calc(1.5vw - 0.1rem),1.5rem);
+}
+
+
+/* page-3 */
+
+.page-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.devices-img{
+    margin-top: 8vw;
+    width: 60%;
+}
+
+
+/* page-4 */
+
+.page-4-features{
+    padding: 5vw 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.single-feature{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align:center;
+    /* margin-right: 5vw; */
+    gap:clamp(1rem, calc(1.5vw - 0.5rem),2rem) 
+}
+.single-feature h1{
+    color: var(--gray-700);
+    padding: 10px 20px;
+    font-size: clamp(1.2rem, calc(2vw - 0.1rem), 2rem);
+}
+.single-feature p{
+    color: var(--gray-500);
+    padding: 0 2vw;
+    font-size: clamp(1rem, calc(1.2vw - 0.1rem), 1.5rem);
+    line-height: 2rem;
+}
+.feature-img{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.sponsered-companies{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10vw;
+    vertical-align: center;
+}
+.company{
+    object-fit: contain;
+    width: 14%;
+}
+
+/* page-5 */
+.page-5{
+    margin-top: 10vh;
+}
+.footer{
+    background-color: #F5F6F8;
+    display: flex;
+    justify-content: space-between;
+    padding:1.5vw 10vw;
+    margin-top: 10vw;
+
+}
+.webpage-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    width: 5%;
+}
+.footer-menu{
+    margin-left: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-menu span{
+    font-size: clamp(1.2rem, calc(2vw - 0.1rem), 1.5rem);
+    margin-right: 7vw;
+    margin-bottom: 2vw;
+    color: var(--gray-700);
+}
+.socials{
+    display: flex;
+}
+.socials img{
+    width: 20%;
+    margin-right: 2vw;
+}
+
+
+.attribution{
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1200px){
+    .page-2{
+        margin-bottom: 5rem;
+    }
+    .image-and-features-container{
+        margin-top: 2rem;
+    }
+    .features{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        margin-left: -50px;
+        margin-top: -30px;
+    }
+    .feature h1{
+        padding-right: 10px;
+    }
+    .feature p{
+        padding-right: 10px;
+    }
+    .page-3,
+    .page-4{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .page-5 > .page-main-text{
+        margin-top: 0px;
+    }
+    .footer-menu{
+        white-space: pre;
+    }
+    .footer-menu > span{
+        margin-top: 5px;
+    }
+    .buttons{
+        height: 4vw;
+    }
+    .download-ios,
+    .download-mac{
+    font-size: 20px;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1650px){
+    .page-3{
+        margin-top: clamp(1rem, calc(4vw - 1rem), 10rem);
+    }
+    .page-5{
+        margin-top: clamp(5rem, calc(4vw - 1rem), 10rem);
+    }
+}
+
+/* mobile phone media query */
+
+@media screen and (max-width: 800px){
+    .header1-img{
+        display: none;
+    }
+    .header2-img{
+        display: block;
+    }
+    .website-logo{
+        width: 25%;
+        top: calc(10vh - 5%);
+    }
+    .main-text{
+        margin-top: -50vw;
+    }
+    .description{
+        font-size: clamp(1rem, 3vw - 0.1rem,2rem);
+        padding: 0vh 10vw;
+    }
+    .buttons{
+        flex-direction: column;
+        gap: 2vh;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        align-items: center;
+    }
+    .download-ios,
+    .download-mac{
+        margin: auto ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image-and-features-container{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .image-container{
+        margin:8vh 0;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: auto;
+        margin: 0;
+    }
+    .feature{
+        width: auto;
+        text-align: center;
+        margin-bottom: 6vh;
+    }
+    .feature h1{
+        font-size: clamp(1.5rem,calc(4vw - 0.1rem),3.5rem);
+    }
+    .feature p{
+        text-align: center;
+        padding: 0 10vw;
+        font-size: clamp(1rem, calc(3vw - 0.1rem),1.5rem);
+    }
+    .devices-img{
+        width: 100%;
+    }
+    .page-heading{
+        font-size: clamp(1.8rem,calc(5vw - 0.1rem),3.5rem);
+        padding: 0 5vw;
+    }
+    .page-description{
+        font-size: clamp(1rem, calc(3vw - 0.1rem),1.5rem);
+        padding: 2rem 10vw;
+        line-height:1.5rem;
+    }
+    .image-container{
+        width: 80%;
+    }
+    .page-4-features{
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+    .feature-img{
+        width: 5vh;
+        height: 5vh;
+        object-fit: contain;
+    }
+    .single-feature{
+        height: 20vh;
+    }
+    .single-feature h1{
+        font-size: clamp(1.4rem,calc(4vw - 0.1rem),2rem);
+    }
+    .single-feature p{
+        font-size: clamp(1rem,calc(4vw - 0.1rem),1.4rem);
+        line-height: normal;
+        padding: 0 2vw;
+    }
+    .sponsered-companies{
+        flex-direction: column;
+        align-items: center;
+        row-gap: 4rem;
+    }
+    .company{
+        width: 30%;
+    }
+    .footer{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .webpage-icon{
+        width: 10%;
+        margin-top: 2rem;
+    }
+    .footer-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .moto{
+        font-size:clamp(1.6rem,calc(8vw - 0.1rem),5rem);
+        padding: calc(70px - 5%) 10vw;
+    }
+    
+}
