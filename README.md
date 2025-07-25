@@ -41,7 +41,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [GitHub](https://github.com/nefariooo/clipboard-landing-page.git)
-- Live Site URL: [Netify](https://your-live-site-url.com)
+- Live Site URL: [Netify](https://magnificentthrush-03-clipboard-page.netlify.app/)
 
 ## My process
 
